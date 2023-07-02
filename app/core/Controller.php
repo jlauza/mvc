@@ -1,6 +1,6 @@
 <?php
 
-// This file callback the methods from each controller
+// This file holds the parent controller
 
 class Controller {
     public function model($model) {
