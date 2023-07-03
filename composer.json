@@ -1,0 +1,17 @@
+{
+    "name": "jasyon/mvc",
+    "autoload": {
+        "psr-4": {
+            "Jasyon\\Mvc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jlauza",
+            "email": "lauzajayson@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/database": "^10.14"
+    }
+}
