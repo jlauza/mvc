@@ -2,8 +2,9 @@
     "name": "jasyon/mvc",
     "autoload": {
         "psr-4": {
-            "Jasyon\\Mvc\\": "src/"
-        }
+            "Jasyon\\Mvc\\": "src/",
+        },
+        "classmap": ["app/models"]
     },
     "authors": [
         {
