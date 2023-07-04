@@ -20,7 +20,7 @@ class Home extends Controller {
             'fname' => $fname,
             'lname' => $lname,
             'email' => $email,
-            'password' => $password
+            'password' => password_hash($password, DEFAULT_PASSWORD)
         ]);
     }
 } 

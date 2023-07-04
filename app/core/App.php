@@ -7,10 +7,25 @@ class App {
     public function __construct() {
         $url = $this->parseUrl();
 
-        if ($url !== null && file_exists('../app/controllers/' . $url[0] . '.php')) {
-            $this->controller = $url[0];
-            unset($url[0]);
-        }   
+        // if ($url !== null && file_exists('../app/controllers/' . $url[0] . '.php')) {
+        //     $this->controller = $url[0];
+        //     unset($url[0]);
+        // }
+
+        if ($url !== null) {
+            if ($url[0] !== '') {
+                if (file_exists('../app/controllers/' . $url[0] . '.php')) {
+                    $this->controller = $url[0];
+                    unset($url[0]);
+                } else {
+                    // Controller not found, throw a 404 error
+                    header("HTTP/1.0 404 Not Found");
+                    echo "404 Page Not Found.";
+                    // $this->renderView('404');
+                    return;
+                }
+            }
+        }
 
         require_once '../app/controllers/'. $this->controller .'.php';
         $this->controller = new $this->controller;
