@@ -15,7 +15,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Jasyon\\Mvc\\": "src/"
+            "Jasyon\\Mvc\\": "src/",
+            "Vendor\\PackageName\\": "src/"
         },
         "classmap": ["app/models"]
     }
