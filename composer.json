@@ -19,7 +19,10 @@
             "Jasyon\\Mvc\\": "app/",
             "Vendor\\PackageName\\": "app/"
         },
-        "classmap": ["app/models"]
+        "classmap": [
+            "app/models",
+            "app/controllers"
+        ]
     }
     
 }
