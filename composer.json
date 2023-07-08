@@ -11,7 +11,8 @@
     ],
     "require": {
         "illuminate/database": "^10.14",
-        "dependency/package": "^1.0"
+        "dependency/package": "^1.0",
+        "vendor/package-name": "^1.0"
     },
     "autoload": {
         "psr-4": {
