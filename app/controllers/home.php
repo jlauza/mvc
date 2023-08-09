@@ -15,12 +15,12 @@ class Home extends Controller {
 
     }
 
-    public function create($fname="", $lname="", $email="", $password=""){
-        User::create([
-            'fname' => $fname,
-            'lname' => $lname,
-            'email' => $email,
-            'password' => password_hash($password, DEFAULT_PASSWORD)
-        ]);
-    }
+    // public function create($fname="", $lname="", $email="", $password=""){
+    //     User::create([
+    //         'fname' => $fname,
+    //         'lname' => $lname,
+    //         'email' => $email,
+    //         'password' => password_hash($password, DEFAULT_PASSWORD)
+    //     ]);
+    // }
 } 
