@@ -6,13 +6,13 @@ class Home extends Controller {
     public function __construct() {
         $this->user = $this->model('User');
     }
-    public function index($name = "") {
-        $user = $this->user;
-        $user->name = $name;
+    public function index() {
+        // $user = $this->user;
+        // $user->name = $name;
 
         // This line callback the method from extends Controller or parent controller w/c is the view
         $this->view('home/index', 
-        ['name' => $user->name]
+        // ['name' => $user->name]
     );
 
     }
