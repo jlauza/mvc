@@ -26,7 +26,7 @@ DreamPro is a comprehensive booking and enrollment system designed specifically 
 1. **Clone the Repository**:
 
 ```bash
-   git clone https://github.com/jlauza/dreampro-php.git
+   git clone https://github.com/jlauza/mvc.git
 ```
 
 
